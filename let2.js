@@ -3,8 +3,8 @@
  */
 //2 let in loop scope - if let try to use the same name it will show an error
 
-console.log("using let in loop scope")
-let name = "jp;"
+console.log("using let in loop scope");
+let name = "jp;";
 if(true){
     let age=42;
 }

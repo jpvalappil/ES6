@@ -4,6 +4,6 @@
 
 //1 let usage in global scope
 
-console.log("using let in global scope")
-let name = "jp;"
+console.log("using let in global scope");
+let name = "jp;";
 console.log(name);

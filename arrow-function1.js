@@ -11,7 +11,7 @@ foo();
 //#1 the arrow function
 var fn = () => {
     console.log('fn invoked');
-}
+};
 fn();
 
 //#2 a single line function body can be represented using the following way
@@ -23,13 +23,13 @@ fn1();
 // if the function body contains multiple lines then using the method involving var fn = () => {} way
 
 var fn2 = (num1, num2) => num1 + num2;
-console.log('The sum is : ' + fn2(8,6));
+console.log('The sum is : ' + fn2(8, 6));
 
 //#4 arrow function with a single parameter can be implemented without using parantheses
 //The parantheses can be skipped only if there is a single parameter in all other situations
 //we need to use the parantheses
 
-var fn3 = age => console.log('The Age is : ' + (age ? age: 'Not provided'));
+var fn3 = age => console.log('The Age is : ' + (age ? age : 'Not provided'));
 fn3(40);
 
 //#5 with a timer
@@ -39,11 +39,17 @@ setTimeout(() => {
 }, 1000);
 
 //# 6 this keyword and arrow function
-var fn4_1 = function(){
+var fn4_1 = function () {
     console.log(this);
-}
+};
 var fn4_2 = () => {
     console.log(this);
-}
+};
+var fn4_3 = () => console.log(this);
+
 fn4_1(); //it prints the this keyword of window object
-fn4_2(); //it tries to print the this keyword of fn4 function
+console.log('fn4_1 completed');
+fn4_2(); //it tries to print the this of window object as it still maintains the global context
+console.log('fn4_2 completed');
+fn4_3();
+console.log('fn4_3 completed');//it tries to print the this of window object as it still maintains the global context

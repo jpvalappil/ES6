@@ -2,7 +2,7 @@
  * Created by jp on 10/06/17.
  */
 
-<<<<<<< HEAD
+<<<<<<< HEAD;
 //Function level variable hoisting will work as expected
 
 function foo() {
@@ -16,11 +16,11 @@ let name; //you'll have to declare it before you using it. if you put this after
 
 function foo() {
     name = "Jayaprakash";
-}
+};
 
 let name; //The declaration of hoisted variable should be done before invoking them
 
->>>>>>> jpvalappil-patch-1
+>>>>>>> jpvalappil-patch-1;
 foo();
 
 console.log(name);
