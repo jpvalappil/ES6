@@ -21,6 +21,7 @@ sumIt(1,2);*/
 
 function sumIt(...numToAdd) { //It expects an array
     let res = 0;
+    console.log(numToAdd.length);
     for(let i = 0, l = numToAdd.length; i < l; i++) {
         res += numToAdd[i];
     }
